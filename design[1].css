@@ -1,0 +1,142 @@
+*, *::after, *::before{
+    box-sizing: content-box;
+}
+html,body{  
+    margin:0;
+     padding:0;
+     width: 100%;
+     height: 100%;
+}
+.calculatrice{
+    border:1px solid red;
+    width:calc( 100% - 2px);
+    height: calc( 100% - 2px);
+    background-color: #161616;
+    display :flex;
+    flex-direction: column;
+}
+.calculatrice .ecran{
+border:1px solid red;
+width: 100%;
+height:calc(100% - 360px);
+}
+.calculatrice .buttons{
+    width: 100%;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+}
+.calculatrice .buttons .function{
+width: 100%;
+height: fit-content;
+display: flex;
+color: white;
+padding-top: 50px;
+padding-left: 10px;
+
+}
+
+.subscreen{
+    background-color: rgba(38, 226, 154, 0.39);
+    border:5px solid black;
+    width:calc( 99% - 2px);
+    height: calc(97% - 2px);
+    
+    
+}
+
+.function button{
+    border-radius:20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+
+.number button{
+    border-radius:20px;
+    width: 40px;
+    height: 40px;
+    background-color:grey;
+    color: ivory;
+    font-size: 20px;
+    
+}
+.number button:hover{
+    box-shadow: 0px 0px 5px  white;
+    background-color: ivory;
+    color: grey;
+}
+
+.btn{
+    padding-right: 6px;
+    padding-left:6px;
+}
+
+.sign button{
+    border-radius:20px;
+    width: 40px;
+    height: 40px;
+    background-color:grey;
+    color: ivory;  
+    font-size: 20px;
+}
+
+.sign button:hover{
+    box-shadow: 0px 0px 5px  white;
+    background-color: ivory;
+    color: grey;
+}
+
+.plus, .moins, .divi, .fois{
+    padding-right: 6px;
+    padding-left:6px ;
+    padding-bottom: 10px;
+}
+
+.spa1, .spa2, .spa3, .spa4{
+   
+    padding-right: 10px;
+    padding-left:7px ;
+    padding-bottom: 10px;
+}
+
+.spa4 button{
+    background-color: red;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius:200px;
+    color: ivory;
+}
+
+
+.calculatrice .buttons .pavé_Numérique{
+    width: 100%;
+    height: 288px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.calculatrice .buttons .pavé_Numérique .number{
+    width: 216px;
+    height: 100%;
+    display: block;
+    float: left;   
+    padding-left: 10px;
+    
+    
+}
+.calculatrice .buttons .pavé_Numérique .sign{
+    width: 72px;
+    height: 288px;
+    display: block;
+}
+/*.button{
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    background-color: #484848;
+    margin: 16px;
+    float: left;
+    display: flex;
+}*/
